@@ -1,0 +1,134 @@
+.formlist {
+  max-width: 600px;
+  margin: 0 auto;
+  &__title {
+    background: #4a4a4a;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+
+.formitem {
+  line-height: 35px;
+  padding: 5px 15px;
+  margin: 15px 0;
+  @include flex-center;
+  .field-name {
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+    line-height: normal;
+
+    @media (max-width: 480px) {
+      width: 28%;
+    }
+  }
+  .v-select {
+    flex: 1;
+    .dropdown-toggle {
+      background-color: #efefef;
+      border: none;
+      border-radius: 0;
+      padding-left: 12px;
+    }
+
+    .dropdown-toggle .clear {
+      visibility: hidden;
+    }
+    // & > .dropdown-toggle  .selected-tag + input[type='search'] {
+    //   max-width: 1px;
+    // }
+    & > .dropdown-toggle  input[readonly='readonly'] {
+      max-width: none;
+      opacity: 1 !important;
+    }
+  }
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    line-height: 25px;
+    background: #efefef;
+    text-indent: 15px;
+  }
+  select {
+    flex: 1;
+    background: #efefef;
+    border: none;
+    padding-left: 15px;
+    height: 27px;
+  }
+  textarea {
+    flex: 1;
+    border: none;
+    outline: none;
+    line-height: 25px;
+    background: #efefef;
+    padding: 0 15px;
+    resize: vertical;
+    min-height: 100px;
+  }
+}
+
+.rebossService {
+  color: #fff;
+  background: #333;
+  text-align: center;
+  padding: 2rem 0;
+  i {
+    font-size: 12rem;
+    line-height: 12rem;
+  }
+  span {
+    display: block;
+    color: $yellow;
+  }
+  .dateTime {
+    font-size: 1rem;
+    border: 1px solid rgb(122, 122, 122);
+    margin: 1rem auto;
+    padding: 0 0 1rem 0;
+    @include radius(8px);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    @include respond-to(sm) {
+      margin: 1rem;
+      width: auto;
+      max-width: none;
+    }
+  }
+  .subTitle {
+    background: #4a4a4a;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    font-size: 1.4rem;
+  }
+  .tips {
+    i {
+      display: block;
+      font-size: 6rem;
+      line-height: 6rem;
+      margin: 0 0 1rem 0;
+    }
+    span {
+      color: #fff;
+    }
+    .icons {
+      @include animation(0s, 8.7s, trun360, infinite, none, linear);
+    }
+  }
+  .spTxt {
+    margin: 0 auto;
+    padding: 0.25rem;
+    background: rgba(122, 122, 122, 0.3);
+    width: 100%;
+    max-width: 600px;
+    @include respond-to(sm) {
+      margin: 0 1rem;
+      width: auto;
+      max-width: none;
+    }
+  }
+}

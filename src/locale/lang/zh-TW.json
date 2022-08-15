@@ -1,0 +1,19 @@
+{
+  "thisIsPreviewScreen": "此為預覽畫面",
+  "storeOpen": "營業中",
+  "goodRatingStore": "好評店家",
+  "newStore": "新店家",
+  "collectionStore": "精選店家",
+  "avgCost": "均消{avgCost}元",
+  "currentNonBusinessHours": "目前非營業時間",
+  "note": "營業備註",
+  "coupons": "優惠活動進行中...",
+  "more": "更多詳情",
+  "receive": "領取",
+  "receiveNow": "立即領取",
+  "close": "關閉",
+  "area": "地區",
+  "dayOff": "休息中",
+  "closed": "本日為營業",
+  "businessType": "業態"
+}

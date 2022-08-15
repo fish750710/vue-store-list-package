@@ -1,17 +1,25 @@
 {
   "name": "vue-store-list-package",
   "version": "0.1.0",
-  "private": true,
+  "description": "給Vue專案使用的店家列表 Component",
+  "author": "hans.wu<hans.wu@myre.life>",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/vue-store-list-package.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vue-store-list-package ./src/main.ts",
+    "test:unit": "vue-cli-service test:unit",
+    "prebuild": "rm -rf dist",
+    "prepublish": "npm run build",
+    "report": "vue-cli-service build --target lib --name vue-store-list-package ./src/main.ts --report"
   },
   "dependencies": {
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
+    "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-typescript": "~4.5.17",
     "@vue/cli-plugin-unit-jest": "~4.5.17",
     "@vue/cli-service": "~4.5.17",
@@ -28,5 +36,10 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest/presets/typescript"
+  },
+  "homepage": "http://192.168.11.251:10080/re-package/vue-store-list-package.git",
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.11.251:10080/re-package/vue-store-list-package.git"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "thisIsPreviewScreen": "This is a preview",
+  "storeOpen": "OPEN",
+  "goodRatingStore": "Good rating store",
+  "newStore": "New store",
+  "collectionStore": "Collection store",
+  "avgCost": "Avg. cost {avgCost}",
+  "currentNonBusinessHours": "CLOSED",
+  "note": "Note",
+  "coupons": "Coupons",
+  "more": "more",
+  "receive": "Receive",
+  "receiveNow": "Receive Now",
+  "close": "Close",
+  "area": "Region",
+  "dayOff": "DAY OFF",
+  "closed": "CLOSED",
+  "businessType": "Business Type"
+}
